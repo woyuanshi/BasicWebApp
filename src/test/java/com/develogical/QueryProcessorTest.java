@@ -28,4 +28,8 @@ public class QueryProcessorTest {
     public void computeAdd() throws Exception {
         assertThat(queryProcessor.process("add"), containsString("plus"));
     }
+    @Test
+    public void Fibonacci() throws Exception {
+        assertThat(queryProcessor.process("Fibonacci"), containsString("Fibonacci"));
+    }
 }
